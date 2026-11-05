@@ -1,5 +1,10 @@
 {
-  "name": "kontrola-pojisteni",
+  "name": "kontrola-pojisteni-web",
+  "main": "src/worker.js",
   "compatibility_date": "2026-11-01",
-  "assets": { "directory": "./" }
+  "assets": { "directory": "./public", "binding": "ASSETS" },
+  "send_email": [
+    { "name": "MAIL", "destination_address": "popovskazdena@gmail.com" }
+  ],
+  "observability": { "enabled": true }
 }
